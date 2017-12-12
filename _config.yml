@@ -23,7 +23,8 @@ description:  Leeds website!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
+  Blog: "blog"
   Agent Based Model: "abm"
   Mapper: "projects"
 
