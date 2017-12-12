@@ -14683,15 +14683,8 @@ sQAAAADAIH/rUewriQAYCBYABoIFgEEogRiBdTc3DwAAAABJRU5ErkJggg==
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="k">import</span> <span class="n">squareform</span><span class="p">,</span> <span class="n">cdist</span><span class="p">,</span> <span class="n">pdist</span>
 
-<span class="c1"># coppied from mapper</span>
 <span class="k">def</span> <span class="nf">Gauss_density</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">metricpar</span><span class="o">=</span><span class="p">{},</span> <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="n">denom</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.</span><span class="o">*</span><span class="n">sigma</span><span class="o">*</span><span class="n">sigma</span>
-    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">ndim</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-        <span class="k">assert</span> <span class="n">metricpar</span><span class="o">==</span><span class="p">{},</span> <span class="p">(</span><span class="s1">&#39;No optional parameter is allowed for a &#39;</span>
-                               <span class="s1">&#39;dissimilarity matrix.&#39;</span><span class="p">)</span>
-        <span class="n">ds</span> <span class="o">=</span> <span class="n">squareform</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="s1">&#39;tomatrix&#39;</span><span class="p">)</span>
-        <span class="n">dd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">ds</span><span class="o">*</span><span class="n">ds</span><span class="o">/</span><span class="n">denom</span><span class="p">)</span>
-        <span class="n">dens</span> <span class="o">=</span> <span class="n">dd</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">alen</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
         <span class="n">dens</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
