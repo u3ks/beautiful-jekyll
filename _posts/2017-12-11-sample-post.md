@@ -1,15 +1,12 @@
-<!---
-your comment goes here
-and here
--->
-
 ---
 layout: post
 title: Sample Post
 subtitle: Placeholder blog post
 gh-badge: [star, fork, follow]
 ---
-
+<!---
+Written by me
+-->
 
 This is a sample blog post.
 
