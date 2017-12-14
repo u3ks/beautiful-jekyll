@@ -1,11 +1,10 @@
-# Written by me
-
-
 ---
 layout: page
 title: Mapper
 ---
-
+<!---
+Written by me
+-->
 This is a page for the second assignment for Programming for the Social Sciences.
 Mapper is a topological data analysis method. Excluding the mathematics behind it can be summarized in these simple steps:
 * A filter function, called lens is applied to the data. These can vary in complexity and range from simply taking only one dimension of the data, e.g. take only the x coordinate from a 3-d dataset, to PCA or Isomaps.
